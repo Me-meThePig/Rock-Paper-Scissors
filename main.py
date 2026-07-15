@@ -5,7 +5,7 @@ comp_wins = 0
 games = 0
 
 while True:
-    user_choice = input('Choose rock, paper, or scissors, or type q to quit (r/p/s/q): ')
+    user_choice = input('Choose rock, paper, or scissors, or type q to quit (r/p/s/q): ').lower()
     comp_choice = randint(0, 2)
 
     # map computer random numbers to rock, paper, or scissors
