@@ -29,28 +29,18 @@ while True:
     # decide the winner
     if user_choice == comp_choice:
         print("it's a tie!")
+    elif user_choice == 'r' and comp_choice == 's':
+        print('You win!')
+        user_wins += 1
+    elif user_choice == 'p' and comp_choice == 'r':
+        print('You win!')
+        user_wins += 1
+    elif user_choice == 's' and comp_choice == 'p':
+        print('You win!')
+        user_wins += 1
     else:
-        if user_choice == 'r':
-            if comp_choice == 's':
-                print('You win!')
-                user_wins += 1
-            else:
-                print('You lose.')
-                comp_wins += 1
-        elif comp_choice == 'p':
-            if user_choice == 'r':
-                print('You win!')
-                user_wins += 1
-            else:
-                print('You lose.')
-                comp_wins += 1
-        else:
-            if comp_choice == 'p':
-                print('You win!')
-                user_wins += 1
-            else:
-                print('You lose.')
-                comp_wins += 1
+        print('You lose.')
+        comp_wins += 1
     
     games += 1
 
