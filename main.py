@@ -1,4 +1,4 @@
-import random
+from random import randint
 
 user_wins = 0
 comp_wins = 0
@@ -6,7 +6,7 @@ games = 0
 
 while True:
     user_choice = input('Choose rock, paper, or scissors, or type q to quit (r/p/s/q): ')
-    comp_choice = random.randint(0, 2)
+    comp_choice = randint(0, 2)
 
     # map computer random numbers to rock, paper, or scissors
     if comp_choice == 0:
