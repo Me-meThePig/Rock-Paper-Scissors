@@ -19,7 +19,7 @@ while True:
     # handle quitting or invalid input
     if user_choice == 'q':
         break
-    elif user_choice != ('r' or 'p' or 's'):
+    if user_choice not in ['r', 'p', 's']:
         continue
 
     # print user and computer choices
